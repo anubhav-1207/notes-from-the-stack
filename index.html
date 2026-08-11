@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Minimal developer blog with Markdown posts, clean design, and light/dark mode." />
+    <title>Notes from the Stack</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div>
+          <p class="eyebrow">Notes from the Stack</p>
+          <h1>Anubhav Ghoshal</h1>
+          <p class="lede">Compiler enthusiast & student building programming languages</p>
+        </div>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">Dark mode</button>
+      </header>
+
+      <main class="content-layout">
+        <section class="posts-panel" aria-labelledby="posts-heading">
+          <div class="panel-head">
+            <h2 id="posts-heading">Latest notes</h2>
+            <!-- <p class="panel-copy"><code>posts/</code>.</p> -->
+          </div>
+          <div id="postList" class="post-list"></div>
+        </section>
+
+        <article class="post-view" aria-live="polite">
+          <div id="fallback" class="fallback-card">
+            <h2>Start reading</h2>
+            <p>Select a post to open the content. Add Markdown files to <code>posts/</code> and update <code>posts/index.json</code>.</p>
+          </div>
+          <div id="postContainer" class="post-content hidden">
+            <header class="post-meta">
+              <p id="postDate"></p>
+              <h2 id="postTitle"></h2>
+              <p id="postDescription"></p>
+            </header>
+            <div id="postBody" class="markdown-body"></div>
+          </div>
+        </article>
+      </main>
+
+      <footer class="site-footer">
+        <p>Built for simple notes, fast reading, and reliable Markdown publishing.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
