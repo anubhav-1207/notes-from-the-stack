@@ -29,15 +29,19 @@ html[data-theme='dark'] {
 html, body {
   margin: 0;
   min-height: 100%;
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Charter", "Bitstream Charter", Georgia, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
   background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.12), transparent 35%),
     radial-gradient(circle at bottom right, rgba(96, 165, 250, 0.08), transparent 28%),
     var(--bg);
   color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  line-height: 1.6;
+  line-height: 1.7;
+  letter-spacing: 0.2px;
 }
 
 .page-shell {
@@ -72,6 +76,8 @@ body {
   margin: 0;
   font-size: clamp(2rem, 3.4vw, 3.3rem);
   line-height: 1.05;
+  font-weight: 600;
+  letter-spacing: -0.5px;
 }
 
 .lede {
@@ -80,15 +86,52 @@ body {
   color: var(--muted);
 }
 
+.header-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: var(--accent);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.social-link:hover {
+  opacity: 0.7;
+  transform: translateY(-2px);
+}
+
+.social-link svg {
+  width: 100%;
+  height: 100%;
+}
+
 .theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
   border: 1px solid var(--border);
   background: var(--surface-strong);
   color: var(--text);
-  padding: 0.95rem 1.2rem;
   border-radius: 999px;
   cursor: pointer;
-  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
-  min-width: 164px;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  padding: 0;
+}
+
+.theme-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
 }
 
 .theme-toggle:hover,
@@ -120,6 +163,9 @@ body {
 .panel-head h2,
 .post-meta h2 {
   margin-top: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 .panel-copy {
@@ -283,6 +329,9 @@ body {
 
 .markdown-body {
   color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  letter-spacing: 0.15px;
 }
 
 .markdown-body h2,
@@ -353,7 +402,8 @@ html[data-theme='dark'] .token-variable { color: #fb923c; }
 
 .markdown-body ul,
 .markdown-body ol {
-  margin: 1rem 0 1rem 1.45rem;
+  margin: 1rem 0 1rem 0.5rem;
+  padding-left: 1.2rem;
 }
 
 .site-footer {

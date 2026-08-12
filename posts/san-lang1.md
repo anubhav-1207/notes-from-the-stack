@@ -1,5 +1,4 @@
-# San: Building a Programming Language on an Android Tablet
-***Published: August 12, 2026 | Reading time: x minutes | Tags: programming-language, compiler, san, android, python***
+***Published: August 12, 2026 | Reading time: 6 minutes | Tags: programming-language, compiler, san, android, python***
 
 ---
 > *"Give me a device that works, and I will show you wonders of the lack of resources"* - **Anubhav G.**
