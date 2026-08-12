@@ -191,6 +191,19 @@ function parseInline(text) {
   return result;
 }
 
+function setActivePostCard(postSlug) {
+  const cards = postList.querySelectorAll('.post-card');
+  cards.forEach((card) => {
+    const isActive = card.dataset.slug === postSlug;
+    card.classList.toggle('is-active', isActive);
+    if (isActive) {
+      card.setAttribute('aria-current', 'true');
+    } else {
+      card.removeAttribute('aria-current');
+    }
+  });
+}
+
 async function loadPostList() {
   try {
     const response = await fetch('posts/index.json');
@@ -201,6 +214,7 @@ async function loadPostList() {
       const card = document.createElement('a');
       card.href = '#';
       card.className = 'post-card';
+      card.dataset.slug = post.slug;
       card.innerHTML = `
         <h3>${post.title}</h3>
         <p>${post.description}</p>
@@ -232,6 +246,7 @@ async function openPost(post) {
     postBody.innerHTML = parseMarkdown(markdown);
     postContainer.classList.remove('hidden');
     fallback.classList.add('hidden');
+    setActivePostCard(post.slug);
   } catch (error) {
     postBody.innerHTML = `<p>Unable to load this post.</p>`;
     postContainer.classList.remove('hidden');

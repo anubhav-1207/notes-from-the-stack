@@ -149,6 +149,12 @@ body {
   transform: translateY(-1px);
 }
 
+.post-card.is-active {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+  background: rgba(37, 99, 235, 0.03);
+}
+
 .post-card h3 {
   margin: 0 0 0.5rem;
   font-size: 1.05rem;
@@ -179,10 +185,54 @@ body {
 .fallback-card {
   display: grid;
   gap: 18px;
+  align-content: center;
+  min-height: 320px;
+  padding: 16px 6px;
+}
+
+.fallback-kicker {
+  display: inline-block;
+  width: fit-content;
+  padding: 0.38rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .fallback-card h2 {
   margin: 0;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.1;
+}
+
+.fallback-card p {
+  margin: 0;
+  color: var(--muted);
+  max-width: 36rem;
+}
+
+.fallback-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.fallback-tags span {
+  padding: 0.45rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.06);
+  color: var(--text);
+  font-size: 0.85rem;
+}
+
+.fallback-hint {
+  font-weight: 600;
+  color: var(--text) !important;
 }
 
 .post-meta {

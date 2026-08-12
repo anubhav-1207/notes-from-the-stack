@@ -55,7 +55,6 @@ While I said everything ran surprisingly better, I did not mean it was the best.
 - **Goal 2:** Make and design the syntax closer to major programming languages.
 - **Goal 3:** Keep the language simple enough for beginners to not get overwhelmed.
 - **Goal 4:** Design the syntax such that users get accustomed multiple languages at the same time.
-
 ### Influences:
 
 - C, Rust, Python, C++

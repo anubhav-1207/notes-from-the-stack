@@ -29,8 +29,15 @@
 
         <article class="post-view" aria-live="polite">
           <div id="fallback" class="fallback-card">
-            <h2>Start reading</h2>
-            <p>Select a post to open the content. Add Markdown files to <code>posts/</code> and update <code>posts/index.json</code>.</p>
+            <span class="fallback-kicker">Welcome</span>
+            <h2>Notes from the Stack</h2>
+            <p>Thoughts, experiments, and ideas from building software, languages, and systems.</p>
+            <div class="fallback-tags" aria-label="Topics">
+              <span>Compilers</span>
+              <span>Systems</span>
+              <span>Language design</span>
+            </div>
+            <p class="fallback-hint">Pick a note from the left to read.</p>
           </div>
           <div id="postContainer" class="post-content hidden">
             <header class="post-meta">
@@ -44,7 +51,7 @@
       </main>
 
       <footer class="site-footer">
-        <p>Built for simple notes, fast reading, and reliable Markdown publishing.</p>
+        <p>Built for simple notes, fast reading, and reliable Markdown publishing</p>
       </footer>
     </div>
 
