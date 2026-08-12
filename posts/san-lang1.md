@@ -79,3 +79,4 @@ I did a lot of mistakes while I was coding San, which most were not a very huge 
 
 ## Conclusion
 Creating a programming language is a very fun thing to do, especially if you have been interested in low level computation. Plus, it is cool and very niche. You will learn much about programming languages and find answers to questions such as "If the compiler knows where and what the error is, why does it not fix the issue?"
+---
