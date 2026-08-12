@@ -162,7 +162,7 @@ function parseMarkdown(markdown) {
     const orderedMatch = line.match(/^\s*(\d+)\.\s+(.*)$/);
     if (unorderedMatch || orderedMatch) {
       const type = unorderedMatch ? 'ul' : 'ol';
-      const content = parseInline((unorderedMatch || orderedMatch)[1]);
+      const content = parseInline(unorderedMatch ? unorderedMatch[1] : orderedMatch[2]);
       if (!listOpen || listType !== type) {
         closeList();
         listType = type;
