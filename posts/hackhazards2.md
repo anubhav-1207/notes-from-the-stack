@@ -1,7 +1,7 @@
-***Published: August 23, 2026 | Reading time: 4 minutes | Tags:compiler, san, hackathon, hackhazards***
+***Published: August 23, 2026 | Reading time: 4 minutes | Tags:compiler, san, hackathon, hack-hazards***
 
 ---
-> *"Artifical Intelligence is a great Genuine Stupididy created by foolish humanity"* - **Anubhav G.**
+> *"Artificial Intelligence is a great genuine stupidity created by foolish humanity"* - **Anubhav G.**
 
 I participated in HackHazards’26 with my programming language, **San**, where I was placed in the 51–100 range, and while the exact rank was not disclosed, I was still satisfied with the fact that I defeated 31,900+ developers on my first ever hackathon in my life.
 
